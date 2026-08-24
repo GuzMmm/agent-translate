@@ -1,5 +1,7 @@
 # Agent 翻译
 
+[English](README.en.md) · [MIT License](LICENSE)
+
 一个接入 **OpenAI 兼容 API** 的 Chrome 翻译插件，支持划词翻译、整页翻译、PDF 翻译，目标语言可自选。
 
 ## 功能

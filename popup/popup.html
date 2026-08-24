@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="title">Agent 翻译</div>
+  </header>
+
+  <section class="row">
+    <span>划词翻译</span>
+    <label class="switch">
+      <input type="checkbox" id="enable">
+      <span class="slider"></span>
+    </label>
+  </section>
+
+  <section class="row">
+    <span>目标语言</span>
+    <select id="targetLang"></select>
+  </section>
+
+  <section class="actions">
+    <button id="translatePage" type="button">翻译本页</button>
+    <button id="restorePage" type="button">还原原文</button>
+  </section>
+
+  <section class="pdf">
+    <button id="openPdf" type="button">打开 PDF 翻译阅读器</button>
+  </section>
+
+  <footer>
+    <button id="openOptions" type="button">设置（API 配置）</button>
+  </footer>
+
+  <script src="../shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Agent 翻译 - 设置</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>Agent 翻译 设置</h1>
+    <p class="hint">接入任意 OpenAI 兼容接口（OpenAI / DeepSeek / 各类中转站）。</p>
+
+    <section class="card">
+      <h2>API 配置</h2>
+      <label class="field">
+        <span>Base URL</span>
+        <input id="baseUrl" type="text" placeholder="https://api.openai.com/v1">
+        <small>填到 /v1 即可，也支持完整地址或只填域名，插件会自动补全。</small>
+      </label>
+      <label class="field">
+        <span>API Key</span>
+        <input id="apiKey" type="password" placeholder="sk-...">
+      </label>
+      <label class="field">
+        <span>模型</span>
+        <input id="model" type="text" placeholder="gpt-4o-mini">
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>翻译设置</h2>
+      <label class="field">
+        <span>目标语言</span>
+        <select id="targetLang"></select>
+      </label>
+      <label class="field">
+        <span>Temperature（0-2）</span>
+        <input id="temperature" type="number" min="0" max="2" step="0.1">
+      </label>
+      <label class="row-check">
+        <input id="enable" type="checkbox"><span>启用划词翻译</span>
+      </label>
+    </section>
+
+    <div class="actions">
+      <button id="test" type="button">测试连接</button>
+      <button id="save" type="button" class="primary">保存</button>
+    </div>
+    <p id="status" class="status"></p>
+  </main>
+
+  <script src="../shared.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

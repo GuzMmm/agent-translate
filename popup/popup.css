@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+body {
+  width: 260px;
+  margin: 0;
+  font: 13px/1.5 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: #1f2937;
+  background: #fff;
+}
+header { padding: 12px 14px 8px; border-bottom: 1px solid #f0f0f0; }
+.title { font-size: 14px; font-weight: 600; }
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+}
+.row span { color: #374151; }
+select {
+  padding: 4px 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+}
+.actions { display: flex; gap: 8px; padding: 10px 14px; }
+.actions button, footer button {
+  flex: 1;
+  padding: 7px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+.actions #translatePage { background: #2563eb; color: #fff; border-color: #2563eb; }
+.actions button:hover, footer button:hover { filter: brightness(0.97); }
+.pdf { padding: 0 14px 10px; }
+.pdf button {
+  width: 100%;
+  padding: 7px 0;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 13px;
+}
+.pdf button:hover { background: #dbeafe; }
+footer { padding: 4px 14px 12px; }
+footer button { width: 100%; color: #6b7280; }
+
+/* 开关 */
+.switch { position: relative; display: inline-block; width: 40px; height: 22px; }
+.switch input { display: none; }
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #d1d5db;
+  border-radius: 22px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.switch input:checked + .slider { background: #2563eb; }
+.switch input:checked + .slider::before { transform: translateX(18px); }
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  background: #dc2626;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  max-width: 220px;
+  text-align: center;
+  z-index: 10;
+}

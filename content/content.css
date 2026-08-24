@@ -1,0 +1,63 @@
+.at-popup {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: 380px;
+  min-width: 200px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+  font: 14px/1.6 -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  text-align: left;
+}
+.at-popup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+  border-radius: 10px 10px 0 0;
+}
+.at-popup-lang {
+  font-size: 12px;
+  color: #6b7280;
+}
+.at-popup-actions {
+  display: flex;
+  gap: 6px;
+}
+.at-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  color: #2563eb;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.at-btn:hover { background: #eef2ff; }
+.at-close { font-size: 16px; color: #9ca3af; }
+.at-popup-body {
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.at-loading { color: #9ca3af; }
+.at-error { color: #dc2626; }
+
+.at-progress {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2147483646;
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font: 13px -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}

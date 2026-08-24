@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF 翻译阅读器</title>
+  <link rel="stylesheet" href="../content/content.css">
+  <link rel="stylesheet" href="pdfviewer.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button id="openFile" type="button" title="打开本地 PDF 文件">打开文件</button>
+    <span class="divider"></span>
+    <button id="prev" type="button" title="上一页">◀</button>
+    <span id="pageInfo">- / -</span>
+    <button id="next" type="button" title="下一页">▶</button>
+    <span class="divider"></span>
+    <button id="zoomOut" type="button" title="缩小">−</button>
+    <span id="zoomInfo">100%</span>
+    <button id="zoomIn" type="button" title="放大">＋</button>
+    <span class="spacer"></span>
+    <button id="translateAll" type="button">翻译全文</button>
+    <button id="openOptions" type="button" title="设置">设置</button>
+  </div>
+
+  <div id="layout">
+    <div id="viewer">
+      <div id="empty" class="empty">
+        <p>把 PDF 拖进来，或点左上角「打开文件」</p>
+        <p class="sub">选中文字即可划词翻译；「翻译全文」生成双语对照</p>
+      </div>
+    </div>
+    <aside id="panel" hidden>
+      <div id="panelHead">
+        <span>双语对照</span>
+        <button id="closePanel" type="button">✕</button>
+      </div>
+      <div id="panelBody"></div>
+    </aside>
+  </div>
+
+  <input id="fileInput" type="file" accept="application/pdf" hidden>
+
+  <script src="../lib/pdf.min.js"></script>
+  <script src="pdfviewer.js"></script>
+</body>
+</html>

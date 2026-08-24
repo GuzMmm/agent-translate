@@ -14,10 +14,28 @@
 
 ## 安装
 
+### 1. 获取代码
+
+**方式 A：下载 ZIP（无需安装 git）**
+
+1. 在本仓库页点绿色的 `<> Code` 按钮 → `Download ZIP`
+2. 解压到本地（得到 `agent-translate-main` 文件夹）
+
+**方式 B：git 克隆（方便日后更新）**
+
+```bash
+git clone https://github.com/GuzMmm/agent-translate.git
+```
+
+### 2. 加载到 Chrome
+
 1. 打开 `chrome://extensions`
 2. 打开右上角「开发者模式」
-3. 点「加载已解压的扩展程序」，选择本仓库文件夹
-4. 点浏览器工具栏里的插件图标 →「设置」，填入 API 配置即可使用
+3. 点「加载已解压的扩展程序」，选择刚才解压 / 克隆出来的文件夹
+
+### 3. 配置 API
+
+点浏览器工具栏里的插件图标 →「设置」，填入 Base URL、API Key、模型，保存后即可使用（详见下方「配置」）。
 
 ## 配置
 

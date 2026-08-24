@@ -12,10 +12,28 @@ A Chrome extension that connects to an **OpenAI-compatible API** for translation
 
 ## Install
 
+### 1. Get the code
+
+**Option A: download the ZIP (no git needed)**
+
+1. On the repo page, click the green `<> Code` button → `Download ZIP`
+2. Unzip it locally (you'll get an `agent-translate-main` folder)
+
+**Option B: git clone (easier to update later)**
+
+```bash
+git clone https://github.com/GuzMmm/agent-translate.git
+```
+
+### 2. Load it into Chrome
+
 1. Open `chrome://extensions`
 2. Enable "Developer mode" (top right)
-3. Click "Load unpacked" and select this folder
-4. Click the extension icon → "Settings" and fill in your API config
+3. Click "Load unpacked" and select the folder you just unzipped / cloned
+
+### 3. Configure the API
+
+Click the extension icon → "Settings", fill in Base URL, API Key and Model, save, and you're ready to go (see "Configuration" below).
 
 ## Configuration
 
